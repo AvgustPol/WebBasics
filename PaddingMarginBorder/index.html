@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="part1">
+        <div class="container">
+            <img id="jelly" src="Images/jelly.JPG" alt="">
+        </div>
+    
+        <div class="section">
+            <div class="red-box">
+                <div class="blue-box">
+                    123
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="red-box">
+                <div id="foo" class="blue-box">
+                    123
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input type="range" id="myRange2" onchange="changePaddingByElementId(this, 'foo')" oninput="changePaddingByElementId(this, 'foo')">
+    
+
+    
+<script>
+    function changePaddingByElementId(rangeInput, elementId) { 
+        let newPadding = rangeInput.value;
+
+        console.log(newPadding);
+        console.log(`${newPadding}px`);
+
+        document.getElementById(elementId).style.padding = `${newPadding}px`;
+    }
+
+
+    var rangeInput = document.getElementById("myRange");    
+    rangeInput.addEventListener('input', changePadding, false);
+    rangeInput.addEventListener('change', changePadding, false);
+</script>
+</body>
+</html>
