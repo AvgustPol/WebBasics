@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="section">
-        <div class="section--padding-change">
+        <div>
             <div id="red-box" >
                 <div id="blue-box">
                     <span class="text--demo">This text is in side the blue box</span>       
@@ -19,24 +19,25 @@
         <div>
             <div>
                 <h1>Change BLUE box padding </h1>
-                <input type="range" id="myRange2" onchange="changePaddingByElementId(this, 'red-box')" oninput="changePaddingByElementId(this, 'red-box')">
+                <input type="range" id="change-blue-padding" onchange="changePaddingByElementId(this, 'blue-box')" oninput="changePaddingByElementId(this, 'blue-box')">
             </div>
             <div>
                 <h1>Change BLUE box margin </h1>
-                <input type="range" id="myRange2" onchange="changePaddingByElementId(this, 'red-box')" oninput="changePaddingByElementId(this, 'red-box')">
+                <input type="range" id="change-blue-margin" onchange="changeMarginByElementId(this, 'blue-box')" oninput="changeMarginByElementId(this, 'blue-box')">
             </div>
         </div>
-    <div>
+   
         <div>
-            <h1>Change RED box padding </h1>
-            <input type="range" id="myRange2" onchange="changePaddingByElementId(this, 'blue-box')" oninput="changePaddingByElementId(this, 'blue-box')">
-        </div>    
-        
-        <div>
-            <h1>Change RED box margin </h1>
-            <input type="range" id="myRange2" onchange="changePaddingByElementId(this, 'blue-box')" oninput="changePaddingByElementId(this, 'blue-box')">
-        </div>    
-    </div>
+            <div>
+                <h1>Change RED box padding </h1>
+                <input type="range" id="change-red-padding" onchange="changePaddingByElementId(this, 'red-box')" oninput="changePaddingByElementId(this, 'red-box')">
+            </div>    
+            
+            <div>
+                <h1>Change RED box margin </h1>
+                <input type="range" id="change-red-margin" onchange="changeMarginByElementId(this, 'red-box')" oninput="changeMarginByElementId(this, 'red-box')">
+            </div>    
+        </div>
     </div>
     <script src="js/script.js"></script>
 

@@ -6,11 +6,10 @@ function changePaddingByElementId(rangeInput, elementId) {
     document.getElementById(elementId).style.padding = `${newPadding}px`;
 }
 
+function changeMarginByElementId(rangeInput, elementId) { 
+    let newMargin = rangeInput.value;
 
-var rangeInput = document.getElementById("myRange");    
-rangeInputPadding.addEventListener('input', changePadding, false);
-rangeInputPadding.addEventListener('change', changePadding, false);
+    console.log(`${newMargin}px`);
 
-var rangeInput = document.getElementById("myRange");    
-rangeInputMargin.addEventListener('input', changeMargin, false);
-rangeInputMargin.addEventListener('change', changeMargin, false);
+    document.getElementById(elementId).style.margin = `${newMargin}px`;
+}
