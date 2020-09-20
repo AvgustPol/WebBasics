@@ -13,3 +13,12 @@ function changeMarginByElementId(rangeInput, elementId) {
 
     document.getElementById(elementId).style.margin = `${newMargin}px`;
 }
+
+
+function changeBorderWidthSideByElementId(rangeInput, elementId) { 
+    let newMargin = rangeInput.value;
+
+    console.log(`${newMargin}px`);
+
+    document.getElementById(elementId).style.borderWidth = `${newMargin}px`;
+}
