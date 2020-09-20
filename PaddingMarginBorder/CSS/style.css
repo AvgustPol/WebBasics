@@ -1,21 +1,21 @@
-.container {
-
+body, html {
+    margin: 0;
+    padding: 0;    
 }
 
-#jelly {
-    width: 300px;
-    height: 300px;
-}
-
-.section {
-   
-}
-
-.red-box {
+#red-box {
     border: 3px solid red;
 }
 
-.blue-box {
+#blue-box {
     border: 3px solid blue;
 }
 
+#dummy-text {
+    width: 500px;
+    height: 500px;
+}
+
+input {
+    width: 100%;
+}

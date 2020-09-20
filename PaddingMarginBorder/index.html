@@ -6,46 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="part1">
-        <div class="container">
-            <img id="jelly" src="Images/jelly.JPG" alt="">
-        </div>
-    
-        <div class="section">
-            <div class="red-box">
-                <div class="blue-box">
-                    123
-                </div>
-            </div>
-        </div>
-        
-        <div class="section">
-            <div class="red-box">
-                <div id="foo" class="blue-box">
-                    123
-                </div>
+    <div class="section--padding-change">
+        <div id="red-box" >
+            <div id="blue-box">
+                123
             </div>
         </div>
     </div>
 
-    <input type="range" id="myRange2" onchange="changePaddingByElementId(this, 'foo')" oninput="changePaddingByElementId(this, 'foo')">
+    <div>
+        <h1>change BLUE box padding </h1>
+        <input type="range" id="myRange2" onchange="changePaddingByElementId(this, 'red-box')" oninput="changePaddingByElementId(this, 'red-box')">
+    </div>
+
+    <div>
+        <h1>change BLUE box padding </h1>
+        <input type="range" id="myRange2" onchange="changePaddingByElementId(this, 'blue-box')" oninput="changePaddingByElementId(this, 'blue-box')">
+    </div>
     
+    <script src="js/script.js"></script>
 
-    
-<script>
-    function changePaddingByElementId(rangeInput, elementId) { 
-        let newPadding = rangeInput.value;
-
-        console.log(newPadding);
-        console.log(`${newPadding}px`);
-
-        document.getElementById(elementId).style.padding = `${newPadding}px`;
-    }
-
-
-    var rangeInput = document.getElementById("myRange");    
-    rangeInput.addEventListener('input', changePadding, false);
-    rangeInput.addEventListener('change', changePadding, false);
-</script>
 </body>
 </html>
