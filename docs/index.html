@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="section">
+        <div>
+            <div id="red-box" >
+                <div id="blue-box">
+                    <span class="text--demo">This text is in side the blue box</span>       
+                </div>
+            </div>
+        </div>
+    
+        <div>
+            <div>
+                <h1>Change <span id="color--blue">BLUE</span> box padding </h1>
+                <input type="range" id="change-blue-padding" onchange="changePaddingByElementId(this, 'blue-box')" oninput="changePaddingByElementId(this, 'blue-box')">
+            </div>
+
+            <div>
+                <h1>Change <span id="color--blue">BLUE</span> box margin </h1>
+                <input type="range" id="change-blue-margin" onchange="changeMarginByElementId(this, 'blue-box')" oninput="changeMarginByElementId(this, 'blue-box')">
+            </div>
+
+            <div>
+                <h1>Change <span id="color--blue">BLUE</span> box border </h1>
+                <input type="range" id="change-blue-margin" onchange="changeBorderWidthSideByElementId(this, 'blue-box')" oninput="changeBorderWidthSideByElementId(this, 'blue-box')">
+            </div>
+            
+        </div>
+   
+        <div>
+            <div>
+                <h1>Change <span id="color--red">RED</span> box padding </h1>
+                <input type="range" id="change-red-padding" onchange="changePaddingByElementId(this, 'red-box')" oninput="changePaddingByElementId(this, 'red-box')">
+            </div>    
+            
+            <div>
+                <h1>Change <span id="color--red">RED</span> box margin </h1>
+                <input type="range" id="change-red-margin" onchange="changeMarginByElementId(this, 'red-box')" oninput="changeMarginByElementId(this, 'red-box')">
+            </div>    
+            
+            <div>
+                <h1>Change <span id="color--red">RED</span> box border </h1>
+                <input type="range" id="change-red-border" onchange="changeBorderWidthSideByElementId(this, 'red-box')" oninput="changeBorderWidthSideByElementId(this, 'red-box')">
+            </div>    
+        </div>
+
+
+        
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
