@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -10,20 +11,32 @@
         <div class="section--padding-change">
             <div id="red-box" >
                 <div id="blue-box">
-                    123
+                    <span class="text--demo">This text is in side the blue box</span>       
                 </div>
             </div>
         </div>
     
         <div>
-            <h1>change BLUE box padding </h1>
-            <input type="range" id="myRange2" onchange="changePaddingByElementId(this, 'red-box')" oninput="changePaddingByElementId(this, 'red-box')">
+            <div>
+                <h1>Change BLUE box padding </h1>
+                <input type="range" id="myRange2" onchange="changePaddingByElementId(this, 'red-box')" oninput="changePaddingByElementId(this, 'red-box')">
+            </div>
+            <div>
+                <h1>Change BLUE box margin </h1>
+                <input type="range" id="myRange2" onchange="changePaddingByElementId(this, 'red-box')" oninput="changePaddingByElementId(this, 'red-box')">
+            </div>
         </div>
-    
+    <div>
         <div>
-            <h1>change BLUE box padding </h1>
+            <h1>Change RED box padding </h1>
             <input type="range" id="myRange2" onchange="changePaddingByElementId(this, 'blue-box')" oninput="changePaddingByElementId(this, 'blue-box')">
         </div>    
+        
+        <div>
+            <h1>Change RED box margin </h1>
+            <input type="range" id="myRange2" onchange="changePaddingByElementId(this, 'blue-box')" oninput="changePaddingByElementId(this, 'blue-box')">
+        </div>    
+    </div>
     </div>
     <script src="js/script.js"></script>
 
